@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section{
+    min-height: 100vh;
+}
+header{
+    position: sticky;
+    top: 0;
+    background: url(./img/fond-texture-mur-peint-blanc.jpg);
+    border-bottom: 5px solid black;
+    height: 70px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo{
+    color:#fff ;
+    font-size: 50px;
+}
+
+header .menuToggle{
+    display: none;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 20px;
+    font-size: 1.4rem;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* section1 */
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./img/art6.jpg") center/cover;
+}
+.sec1 .centerblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffc2;
+    padding: 30px;
+    margin: 0 20px;
+    /* backdrop-filter: blur(40px); */
+}
+.sec1 h1{
+    font-size: 3rem;
+}
+
+.sec1 p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+/* section2 */
+
+.sec2{
+    background:url(./img/art6.jpg) center/cover;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.sec2 .img{
+    /* width: 1020px; */
+    /* padding: 10px; */
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec2 .img img{
+    width: 300px;
+}
+.sec2 .text-img{
+    background:#ffffffc2;
+    padding: 20px;
+    width: 600px;
+    margin: 30px auto;
+}
+.sec2 .text-img h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+.sec2 .text-img p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width:616px){
+    .sec2 .img img{
+        width: 50%;
+    }
+}
+
+/* section3 */
+
+.sec3{
+    background:url(./img/fond-texture-mur-peint-blanc.jpg) center/cover;
+    padding-top: 50px;
+}
+
+.sec3 h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px;
+}
+.sec3 .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec3 .cards .card{
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec3 .cards .card img{
+    width: 302px;
+}
+
+@media screen and (max-width:600px){
+    .sec3 .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .sec3 .cards .card{
+        /* margin: 40px auto; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec3 .cards .card img{
+        width: 50%;
+    }
+}
+/* Footer */
+
+.footer{
+    background: black;
+}
